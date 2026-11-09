@@ -3,80 +3,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROCKET TREE</title>
+    <title>Rocket Tree - Home</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Header / Logo -->
-    <header class="site-header">
-        <h1 class="logo">🚀 ROCKET TREE</h1>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Welcome to Rocket Tree</h2>
-            <p class="tagline">Fresh Food, Great Taste!</p>
-            <a href="#menu" class="btn primary">Explore Our Menu</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Rocket Tree" /></a>
         </div>
-        <div class="hero-images">
-            <img src="images/hero1.jpg" alt="Delicious food" />
-            <img src="images/hero2.jpg" alt="Tasty dishes" />
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-icon">🛒<span id="cart-count" class="badge">0</span></a>
+            <a href="https://wa.me/918081529714" target="_blank" class="whatsapp-icon">💬</a>
         </div>
-    </section>
+    </nav>
 
-    <!-- Food Menu -->
-    <section id="menu" class="menu-section">
-        <h3>Our Menu</h3>
-        <div class="menu-grid">
-            <!-- Food Card 1 -->
-            <div class="food-card" data-name="Paneer Butter Masala" data-price="250">
-                <img src="images/food1.jpg" alt="Paneer Butter Masala" />
-                <h4>Paneer Butter Masala</h4>
-                <p class="price">₹250</p>
-                <p class="desc">Creamy tomato‑based gravy with soft paneer cubes.</p>
-                <button class="btn whatsapp" onclick="orderWhatsApp(this)">Order on WhatsApp</button>
+    <!-- Hero Banner -->
+    <section class="hero-banner" style="background-image:url('images/hero.jpg');">
+        <div class="hero-overlay">
+            <h1>Welcome to Rocket Tree</h1>
+            <p class="tagline">Your One Stop Destination for Products & Services.</p>
+            <div class="hero-actions">
+                <a href="products.html" class="btn primary">Explore Products</a>
+                <a href="services.html" class="btn secondary">Explore Services</a>
             </div>
-            <!-- Food Card 2 -->
-            <div class="food-card" data-name="Chicken Biryani" data-price="300">
-                <img src="images/food2.jpg" alt="Chicken Biryani" />
-                <h4>Chicken Biryani</h4>
-                <p class="price">₹300</p>
-                <p class="desc">Aromatic basmati rice layered with spiced chicken.</p>
-                <button class="btn whatsapp" onclick="orderWhatsApp(this)">Order on WhatsApp</button>
-            </div>
-            <!-- Food Card 3 -->
-            <div class="food-card" data-name="Chocolate Brownie" data-price="150">
-                <img src="images/food3.jpg" alt="Chocolate Brownie" />
-                <h4>Chocolate Brownie</h4>
-                <p class="price">₹150</p>
-                <p class="desc">Rich, fudgy brownie served warm.</p>
-                <button class="btn whatsapp" onclick="orderWhatsApp(this)">Order on WhatsApp</button>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search products, services..." />
+                <button id="search-btn" class="btn search">Search</button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <h3>Contact Us</h3>
-        <p>Have a question? Reach out on WhatsApp!</p>
-        <a href="https://wa.me/918081529714" class="btn whatsapp-contact" target="_blank">WhatsApp Us</a>
+    <!-- Featured Sections -->
+    <section class="section featured-products">
+        <h2>Featured Products</h2>
+        <div id="featured-products" class="grid"></div>
     </section>
 
-    <!-- Footer -->
+    <section class="section popular-services">
+        <h2>Popular Services</h2>
+        <div id="popular-services" class="grid"></div>
+    </section>
+
+    <section class="section special-offers">
+        <h2>Special Offers</h2>
+        <div class="offers-carousel">
+            <!-- Simple static carousel placeholder -->
+            <div class="offer-item">Offer 1: 20% off on Electronics</div>
+            <div class="offer-item">Offer 2: Free Shipping on orders > ₹500</div>
+        </div>
+    </section>
+
     <footer class="site-footer">
         <p>&copy; 2026 Rocket Tree. All rights reserved.</p>
     </footer>
-
-    <script>
-        function orderWhatsApp(btn) {
-            const card = btn.parentElement;
-            const name = encodeURIComponent(card.dataset.name);
-            const price = encodeURIComponent(card.dataset.price);
-            const text = `Hello Rocket Tree! I want to order:%0AFood Name: ${name}%0APrice: ₹${price}%0APlease confirm my order.`;
-            const url = `https://wa.me/918081529714?text=${text}`;
-            window.open(url, '_blank');
-        }
-    </script>
 </body>
 </html>

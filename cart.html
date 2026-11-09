@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Tree - Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Rocket Tree" /></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-icon">🛒<span id="cart-count" class="badge">0</span></a>
+            <a href="https://wa.me/918081529714" target="_blank" class="whatsapp-icon">💬</a>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Your Cart</h1>
+    </section>
+
+    <section class="section" id="cart-items">
+        <!-- Cart items will be injected here -->
+    </section>
+
+    <section class="section" id="cart-summary">
+        <div class="total-block">Total: ₹<span id="cart-total">0</span></div>
+        <button class="btn whatsapp" id="checkout-whatsapp">Order via WhatsApp</button>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Rocket Tree. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Tree - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Rocket Tree" /></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-icon">🛒<span id="cart-count" class="badge">0</span></a>
+            <a href="https://wa.me/918081529714" target="_blank" class="whatsapp-icon">💬</a>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="section" style="max-width:600px;margin:auto;">
+        <p>Feel free to reach out via WhatsApp, email, or the form below.</p>
+        <a href="https://wa.me/918081529714" target="_blank" class="btn whatsapp" style="width:100%;margin-bottom:1rem;">Chat on WhatsApp</a>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn primary" style="width:100%;margin-top:0.5rem;">Send (Placeholder)</button>
+        </form>
+        <p style="margin-top:1rem;">Business email: <code>info@rockettree.com</code></p>
+        <p>Address: 123 Business Lane, City, Country</p>
+        <p>Follow us: <a href="#" style="color:var(--orange);">Facebook</a> | <a href="#" style="color:var(--orange);">Instagram</a> | <a href="#" style="color:var(--orange);">Twitter</a></p>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Rocket Tree. All rights reserved.</p>
+    </footer>
+</body>
+</html>
