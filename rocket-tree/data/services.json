@@ -1,0 +1,29 @@
+[
+  {
+    "id": "s1",
+    "name": "Website Development",
+    "category": "Online Services",
+    "description": "Professional responsive website development.",
+    "startingPrice": 5000,
+    "image": "images/service1.jpg",
+    "available": true
+  },
+  {
+    "id": "s2",
+    "name": "Graphic Designing",
+    "category": "Design",
+    "description": "Creative graphics for branding and marketing.",
+    "startingPrice": 2000,
+    "image": "images/service2.jpg",
+    "available": true
+  },
+  {
+    "id": "s3",
+    "name": "Digital Marketing",
+    "category": "Marketing",
+    "description": "SEO, SMO, and online ad campaign management.",
+    "startingPrice": 3000,
+    "image": "images/service3.jpg",
+    "available": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p1",
+    "name": "Paneer Butter Masala",
+    "category": "Food & Beverages",
+    "description": "Creamy tomato‑based gravy with soft paneer cubes.",
+    "price": 250,
+    "discountPrice": 220,
+    "image": "https://via.placeholder.com/300x200?text=Paneer+Butter+Masala",
+    "available": true
+  },
+  {
+    "id": "p2",
+    "name": "Wireless Earbuds",
+    "category": "Electronics & Gadgets",
+    "description": "Compact true‑wireless earbuds with great sound.",
+    "price": 1500,
+    "discountPrice": null,
+    "image": "images/electronics1.jpg",
+    "available": true
+  },
+  {
+    "id": "p3",
+    "name": "Running Shoes",
+    "category": "Shoes & Footwear",
+    "description": "Lightweight breathable running shoes.",
+    "price": 3500,
+    "discountPrice": 3000,
+    "image": "images/shoes1.jpg",
+    "available": false
+  }
+]
