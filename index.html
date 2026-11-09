@@ -1,69 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocket Tree - Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROCKET TREE - Multi-Service & E-Commerce Platform</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-    <!-- Navigation -->
+<body data-page="index">
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <span>🚀 Welcome to <strong>ROCKET TREE</strong> - Everything in One Destination!</span>
+    <span>Direct WhatsApp Support: <a href="https://wa.me/918081529714" target="_blank">+91 8081529714</a></span>
+  </div>
+
+  <!-- Navbar -->
+  <header>
     <nav class="navbar">
-        <div class="nav-left">
-            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Rocket Tree" /></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="nav-icons">
-            <a href="cart.html" class="cart-icon">🛒<span id="cart-count" class="badge">0</span></a>
-            <a href="https://wa.me/918081529714" target="_blank" class="whatsapp-icon">💬</a>
-        </div>
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logo.jpg" alt="Rocket Tree Logo" class="logo-img" onerror="this.style.display='none'" />
+          <div class="logo-text">ROCKET<span>TREE</span></div>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart-btn" title="View Cart">
+          🛒 <span id="cart-count" class="cart-badge" style="display:none;">0</span>
+        </a>
+        <a href="https://wa.me/918081529714" target="_blank" class="nav-wa-btn">
+          💬 WhatsApp
+        </a>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Banner -->
-    <section class="hero-banner" style="background-image:url('images/hero.jpg');">
-        <div class="hero-overlay">
-            <h1>Welcome to Rocket Tree</h1>
-            <p class="tagline">Your One Stop Destination for Products & Services.</p>
-            <div class="hero-actions">
-                <a href="products.html" class="btn primary">Explore Products</a>
-                <a href="services.html" class="btn secondary">Explore Services</a>
-            </div>
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Search products, services..." />
-                <button id="search-btn" class="btn search">Search</button>
-            </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-badge">✨ All-in-One Multi-Service Platform</div>
+    <h1>Welcome to <span>ROCKET TREE</span></h1>
+    <p class="tagline">Your One Stop Destination for Products & Professional Services. Fast, Affordable & Directly on WhatsApp.</p>
+    
+    <div class="hero-actions">
+      <a href="products.html" class="btn btn-primary">🛍️ Explore Products</a>
+      <a href="services.html" class="btn btn-secondary">⚡ Explore Services</a>
+    </div>
+
+    <div class="hero-search">
+      <input type="text" id="search-input" placeholder="Search food, gadgets, fashion, digital services..." />
+      <button id="search-btn">Search</button>
+    </div>
+  </section>
+
+  <!-- Trust Highlights Bar -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <div class="trust-icon">⚡</div>
+      <div>
+        <h4>Instant WhatsApp Order</h4>
+        <p>Zero complicated checkouts</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">⭐</div>
+      <div>
+        <h4>Verified Quality</h4>
+        <p>100% genuine products & services</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">💰</div>
+      <div>
+        <h4>Affordable Pricing</h4>
+        <p>Best rates guaranteed</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">📞</div>
+      <div>
+        <h4>24/7 Support</h4>
+        <p>Direct chat on 8081529714</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Products Section -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-subtitle">Top Picks</span>
+      <h2>Featured Products</h2>
+      <p>Discover handpicked top quality items from food, gadgets to daily lifestyle essentials.</p>
+    </div>
+    <div id="featured-products" class="product-grid">
+      <!-- Injected by JavaScript -->
+    </div>
+    <div style="text-align:center; margin-top: 2.5rem;">
+      <a href="products.html" class="btn btn-secondary" style="border: 1px solid var(--border-color);">View All Products →</a>
+    </div>
+  </section>
+
+  <!-- Popular Services Section -->
+  <section class="section" style="background: #edf7f0; border-radius: 16px; margin-bottom: 3rem;">
+    <div class="section-header">
+      <span class="section-subtitle">Expert Solutions</span>
+      <h2>Popular Services</h2>
+      <p>From website creation, graphic design to marketing and consulting - we make things happen.</p>
+    </div>
+    <div id="popular-services" class="service-grid">
+      <!-- Injected by JavaScript -->
+    </div>
+    <div style="text-align:center; margin-top: 2.5rem;">
+      <a href="services.html" class="btn btn-primary">Browse All Services →</a>
+    </div>
+  </section>
+
+  <!-- Special Offers Banner -->
+  <section class="section">
+    <div class="special-offers-card">
+      <div class="offers-text">
+        <h3>🎉 Festival Super Deal - Flat 20% OFF</h3>
+        <p>Get exclusive discounts on your first purchase or custom service package. Simply message us on WhatsApp with the promo code below!</p>
+        <span class="offers-code">COUPON: ROCKET20</span>
+      </div>
+      <div>
+        <a href="https://wa.me/918081529714?text=Hello%20Rocket%20Tree!%20I%20want%20to%20claim%20the%20ROCKET20%20special%20offer." target="_blank" class="btn btn-primary" style="background: var(--accent-orange); color: #fff;">
+          Claim on WhatsApp 💬
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Modal for Quick View -->
+  <div id="product-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close">✕</button>
+      <div class="modal-img-container">
+        <img id="modal-img" src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <span id="modal-category" class="badge-category">Category</span>
+        <h2 id="modal-title">Product Title</h2>
+        <p id="modal-desc">Detailed product description will go here.</p>
+        
+        <div class="modal-price-row">
+          <span id="modal-price" class="current-price">₹0</span>
+          <span id="modal-original-price" class="orig-price">₹0</span>
         </div>
-    </section>
 
-    <!-- Featured Sections -->
-    <section class="section featured-products">
-        <h2>Featured Products</h2>
-        <div id="featured-products" class="grid"></div>
-    </section>
-
-    <section class="section popular-services">
-        <h2>Popular Services</h2>
-        <div id="popular-services" class="grid"></div>
-    </section>
-
-    <section class="section special-offers">
-        <h2>Special Offers</h2>
-        <div class="offers-carousel">
-            <!-- Simple static carousel placeholder -->
-            <div class="offer-item">Offer 1: 20% off on Electronics</div>
-            <div class="offer-item">Offer 2: Free Shipping on orders > ₹500</div>
+        <div class="modal-qty-control">
+          <label for="modal-qty">Quantity:</label>
+          <input type="number" id="modal-qty" min="1" value="1" />
         </div>
-    </section>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Rocket Tree. All rights reserved.</p>
-    </footer>
+        <div class="modal-buttons">
+          <button id="modal-add-cart" class="btn btn-cart">🛒 Add to Cart</button>
+          <button id="modal-order-wa" class="btn btn-wa">💬 Order on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>ROCKET TREE</h3>
+        <p>ROCKET TREE is India's leading multi-service platform delivering high quality food, modern gadgets, daily lifestyle items, and expert online business services with direct WhatsApp convenience.</p>
+        <p><strong>WhatsApp:</strong> +91 8081529714</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul class="footer-links">
+          <li><a href="products.html">Food & Beverages</a></li>
+          <li><a href="products.html">Electronics & Gadgets</a></li>
+          <li><a href="products.html">Fashion & Shoes</a></li>
+          <li><a href="services.html">Website Development</a></li>
+          <li><a href="services.html">Graphic Designing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Connect With Us</h3>
+        <div class="footer-contact-item">📍 India</div>
+        <div class="footer-contact-item">✉️ support@rockettree.com</div>
+        <div class="footer-contact-item">💬 WhatsApp: 8081529714</div>
+        <div style="margin-top: 1rem;">
+          <a href="https://wa.me/918081529714" target="_blank" class="btn btn-wa btn-block">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 ROCKET TREE. All rights reserved. Everything. One Destination.</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,40 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocket Tree - Services</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - ROCKET TREE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
 </head>
-<body>
+<body data-page="services">
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>🚀 Professional Digital & Business Services - Instant Consultation</span>
+    <span>WhatsApp Support: <strong>+91 8081529714</strong></span>
+  </div>
+
+  <!-- Navbar -->
+  <header>
     <nav class="navbar">
-        <div class="nav-left">
-            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Rocket Tree" /></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="nav-icons">
-            <a href="cart.html" class="cart-icon">🛒<span id="cart-count" class="badge">0</span></a>
-            <a href="https://wa.me/918081529714" target="_blank" class="whatsapp-icon">💬</a>
-        </div>
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logo.jpg" alt="Rocket Tree Logo" class="logo-img" onerror="this.style.display='none'" />
+          <div class="logo-text">ROCKET<span>TREE</span></div>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart-btn" title="View Cart">
+          🛒 <span id="cart-count" class="cart-badge" style="display:none;">0</span>
+        </a>
+        <a href="https://wa.me/918081529714" target="_blank" class="nav-wa-btn">
+          💬 WhatsApp
+        </a>
+      </div>
     </nav>
+  </header>
 
-    <section class="page-header">
-        <h1>Our Services</h1>
-    </section>
+  <!-- Page Header Strip -->
+  <div class="page-header-strip">
+    <div class="page-header-content">
+      <div>
+        <h1>Professional Services</h1>
+        <p>From website development, graphic design, digital marketing to printing & business solutions.</p>
+      </div>
+    </div>
+  </div>
 
-    <section class="section service-grid" id="service-list">
-        <!-- Service cards injected by JS -->
-    </section>
+  <!-- Services Grid -->
+  <main class="section">
+    <div id="service-list" class="service-grid">
+      <!-- Injected by JavaScript -->
+    </div>
+  </main>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Rocket Tree. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>ROCKET TREE</h3>
+        <p>Your one stop hub for premier tech, creative, media & business consulting services.</p>
+        <p><strong>WhatsApp:</strong> +91 8081529714</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Service Categories</h3>
+        <ul class="footer-links">
+          <li>Web Development</li>
+          <li>Graphic & Logo Design</li>
+          <li>Digital Marketing</li>
+          <li>Video & Photo Editing</li>
+          <li>Printing Solutions</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Need Custom Service?</h3>
+        <p>Have a custom project requirement or need tailored quotation? Message us directly!</p>
+        <a href="https://wa.me/918081529714?text=Hello%20Rocket%20Tree!%20I%20have%20a%20custom%20service%20requirement." target="_blank" class="btn btn-wa btn-block">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ROCKET TREE. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

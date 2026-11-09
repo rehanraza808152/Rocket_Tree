@@ -1,53 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocket Tree - Contact Us</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - ROCKET TREE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
 </head>
-<body>
+<body data-page="contact">
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>🚀 Need Quick Help or Custom Orders?</span>
+    <span>WhatsApp Support: <strong>+91 8081529714</strong></span>
+  </div>
+
+  <!-- Navbar -->
+  <header>
     <nav class="navbar">
-        <div class="nav-left">
-            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Rocket Tree" /></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
-        </ul>
-        <div class="nav-icons">
-            <a href="cart.html" class="cart-icon">🛒<span id="cart-count" class="badge">0</span></a>
-            <a href="https://wa.me/918081529714" target="_blank" class="whatsapp-icon">💬</a>
-        </div>
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logo.jpg" alt="Rocket Tree Logo" class="logo-img" onerror="this.style.display='none'" />
+          <div class="logo-text">ROCKET<span>TREE</span></div>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart-btn" title="View Cart">
+          🛒 <span id="cart-count" class="cart-badge" style="display:none;">0</span>
+        </a>
+        <a href="https://wa.me/918081529714" target="_blank" class="nav-wa-btn">
+          💬 WhatsApp
+        </a>
+      </div>
     </nav>
+  </header>
 
-    <section class="page-header">
+  <!-- Page Header -->
+  <div class="page-header-strip">
+    <div class="page-header-content">
+      <div>
         <h1>Contact Us</h1>
-    </section>
+        <p>Get in touch with ROCKET TREE for product inquiries, bulk orders, or custom service requests.</p>
+      </div>
+    </div>
+  </div>
 
-    <section class="section" style="max-width:600px;margin:auto;">
-        <p>Feel free to reach out via WhatsApp, email, or the form below.</p>
-        <a href="https://wa.me/918081529714" target="_blank" class="btn whatsapp" style="width:100%;margin-bottom:1rem;">Chat on WhatsApp</a>
+  <!-- Contact Section -->
+  <main class="section">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; max-width: 1050px; margin: 0 auto;">
+      <!-- Direct Contact Details -->
+      <div style="background:#fff; padding:2.5rem; border-radius:16px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm);">
+        <h2 style="font-size:1.6rem; color:var(--primary-dark); margin-bottom:1.2rem; font-weight:800;">Get in Touch</h2>
+        <p style="color:var(--text-muted); margin-bottom:1.8rem; font-size:0.95rem;">
+          Our customer service team is available around the clock to help with any product orders or service queries.
+        </p>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size:0.9rem; text-transform:uppercase; color:var(--accent-orange); font-weight:700; margin-bottom:4px;">Official WhatsApp</h4>
+          <p style="font-size:1.2rem; font-weight:800; color:var(--primary-dark);">+91 8081529714</p>
+          <a href="https://wa.me/918081529714" target="_blank" class="btn btn-wa" style="margin-top:8px;">
+            💬 Open Direct WhatsApp Chat
+          </a>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size:0.9rem; text-transform:uppercase; color:var(--accent-orange); font-weight:700; margin-bottom:4px;">Business Email</h4>
+          <p style="font-size:1rem; font-weight:600; color:#334155;">support@rockettree.com</p>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size:0.9rem; text-transform:uppercase; color:var(--accent-orange); font-weight:700; margin-bottom:4px;">Office Address</h4>
+          <p style="font-size:0.95rem; color:#475569;">Rocket Tree Corporate Hub, Gomti Nagar, Lucknow, Uttar Pradesh, India - 226010</p>
+        </div>
+
+        <div>
+          <h4 style="font-size:0.9rem; text-transform:uppercase; color:var(--accent-orange); font-weight:700; margin-bottom:4px;">Working Hours</h4>
+          <p style="font-size:0.95rem; color:#475569;">Monday - Sunday: 9:00 AM – 10:00 PM</p>
+        </div>
+      </div>
+
+      <!-- Quick Message Form -->
+      <div style="background:#fff; padding:2.5rem; border-radius:16px; border:1px solid var(--border-color); box-shadow:var(--shadow-sm);">
+        <h2 style="font-size:1.6rem; color:var(--primary-dark); margin-bottom:0.5rem; font-weight:800;">Send a Quick Message</h2>
+        <p style="color:var(--text-muted); margin-bottom:1.5rem; font-size:0.9rem;">
+          Fill out this form and it will automatically generate your message on WhatsApp for instant confirmation.
+        </p>
+
         <form id="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit" class="btn primary" style="width:100%;margin-top:0.5rem;">Send (Placeholder)</button>
-        </form>
-        <p style="margin-top:1rem;">Business email: <code>info@rockettree.com</code></p>
-        <p>Address: 123 Business Lane, City, Country</p>
-        <p>Follow us: <a href="#" style="color:var(--orange);">Facebook</a> | <a href="#" style="color:var(--orange);">Instagram</a> | <a href="#" style="color:var(--orange);">Twitter</a></p>
-    </section>
+          <div style="margin-bottom:1.2rem;">
+            <label for="name" style="display:block; font-size:0.88rem; font-weight:700; margin-bottom:6px; color:#334155;">Your Name *</label>
+            <input type="text" id="name" required style="width:100%; padding:10px 14px; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none;" placeholder="Enter your full name" />
+          </div>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Rocket Tree. All rights reserved.</p>
-    </footer>
+          <div style="margin-bottom:1.2rem;">
+            <label for="email" style="display:block; font-size:0.88rem; font-weight:700; margin-bottom:6px; color:#334155;">Email Address *</label>
+            <input type="email" id="email" required style="width:100%; padding:10px 14px; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none;" placeholder="name@example.com" />
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label for="message" style="display:block; font-size:0.88rem; font-weight:700; margin-bottom:6px; color:#334155;">How can we help you? *</label>
+            <textarea id="message" rows="4" required style="width:100%; padding:10px 14px; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none; resize:vertical;" placeholder="Describe what products or services you are looking for..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="padding:12px; font-size:1rem;">
+            🚀 Send via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>ROCKET TREE</h3>
+        <p>Everything you need in one destination. Fast WhatsApp ordering with zero friction.</p>
+        <p><strong>WhatsApp:</strong> +91 8081529714</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Fast Support</h3>
+        <p>Order assistance, payment support or custom design inquiries available 7 days a week.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ROCKET TREE. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
